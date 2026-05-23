@@ -1,0 +1,533 @@
+/* About Page Styles */
+.about-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .about-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .about-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .about-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 10;
+  }
+  
+  .about-content h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .about-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  
+  .about-history {
+    padding: 100px 0;
+    background-color: #fff;
+  }
+  
+  .about-history h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #ed1c24;
+  }
+  
+  .about-history p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .read-more {
+    color: #ed1c24;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  
+  .read-more img {
+    width: 20px;
+    margin-left: 10px;
+  }
+  
+  .about-mission {
+    padding: 100px 0;
+    background-color: #f8f8f8;
+  }
+  
+  .about-mission h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #ed1c24;
+  }
+  
+  .mission-statement {
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .mission-author {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #666;
+  }
+  
+  .mission-cards {
+    margin-top: 50px;
+  }
+  
+  .mission-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .mission-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .mission-card i {
+    font-size: 2.5rem;
+    color: #ed1c24;
+    margin-bottom: 1.5rem;
+  }
+  
+  .mission-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .mission-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .about-museum {
+    padding: 0;
+  }
+
+  /* Navbar Styles */
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    transition: 0.5s ease;
+}
+
+header .search {
+    color: #fff;
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+header .search a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header .search a:hover {
+    color: #f1f1f1;
+}
+
+header .brand img {
+    width: 55px;
+}
+
+header .navigation {
+    position: relative;
+}
+
+header .navigation .navigation-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .navigation .navigation-items a {
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items .brand {
+    padding-left: 5px;
+}
+
+header .navigation .navigation-items a:before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .search a {
+    font-weight: 500;
+    position: relative;
+}
+
+header .search a:after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .search a:hover:after {
+    width: 100%;
+}
+
+header .navigation .navigation-items a:hover:before {
+    width: 100%;
+}
+
+header .navigation .navigation-items a.active {
+    color: #fff;
+}
+
+header .navigation .navigation-items a.active:before {
+    width: 100%;
+}
+
+/* Adjust hero section to account for navbar */
+.collections-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 0; /* Remove any margin that might push it down */
+}
+
+
+/* Experiences Page Specific Styles */
+.experience-intro {
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .experience-intro h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .experience-intro p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .experience-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .experience-image {
+    position: relative;
+    height: 100%;
+  }
+  
+  .experience-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .experience-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(237, 28, 36, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .experience-card:hover .experience-overlay {
+    opacity: 1;
+  }
+  
+  .overlay-content {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .overlay-content h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .overlay-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn-experience {
+    display: inline-block;
+    background: transparent;
+    color: #fff;
+    padding: 10px 25px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-experience:hover {
+    background: #fff;
+    color: #ed1c24;
+  }
+  
+  .featured-experience {
+    background: #f8f8f8;
+  }
+  
+  .featured-experience h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .featured-experience p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .experience-features {
+    margin-bottom: 30px;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .feature-item i {
+    color: #ed1c24;
+    font-size: 1.5rem;
+    margin-right: 15px;
+  }
+  
+  .feature-item span {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .btn-book-now {
+    display: inline-block;
+    background: #ed1c24;
+    color: #fff;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-book-now:hover {
+    background: #c5161c;
+    color: #fff;
+  }
+  
+  .testimonials {
+    background: #fff;
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .testimonial-card {
+    background: #f8f8f8;
+    border-radius: 8px;
+    padding: 30px;
+    height: 100%;
+  }
+  
+  .testimonial-text p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+  }
+  
+  .client-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .client-info h4 {
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 5px;
+  }
+  
+  .client-info p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .newsletter-cta {
+    background: #000;
+    color: #fff;
+  }
+  
+  .newsletter-cta h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  .newsletter-cta p {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .newsletter-form input {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .newsletter-form button {
+    background: #ed1c24;
+    color: #fff;
+    border: none;
+    padding: 0 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .newsletter-form button:hover {
+    background: #c5161c;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .experience-card {
+      margin-bottom: 20px;
+      height: 300px;
+    }
+    
+    .featured-experience h2,
+    .testimonials h2,
+    .newsletter-cta h2 {
+      font-size: 2rem;
+    }
+    
+    .featured-experience p,
+    .testimonials p,
+    .newsletter-cta p {
+      font-size: 1rem;
+    }
+    
+    .newsletter-form {
+      flex-direction: column;
+    }
+    
+    .newsletter-form input,
+    .newsletter-form button {
+      width: 100%;
+    }
+    
+    .newsletter-form button {
+      padding: 15px;
+      margin-top: 10px;
+    }
+  }
+
+
+
+
+
+  

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari Racing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #171616;
+            color: #fff;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .logo img {
+            width: 55px;
+            height: auto;
+        }
+
+
+        .container {
+            display: flex;
+            height: 100vh;
+            padding-left: 120px;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #171616;
+            padding: 20px;
+            color: #fff;
+            height: 100%;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            padding: 10px 0;
+            transition: color 0.3s ease;
+        }
+
+        .sidebar a:hover {
+            color: #FF2800;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #171616;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            color: #fff;
+            display: block;
+            text-decoration: none;
+        }
+
+
+        .sidebar ul li {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-column {
+            width: 200px;
+            background-color: #171616;
+            padding: 20px;
+            margin: 0 20px;
+            position: relative;
+            display: none;
+        }
+
+        .dropdown-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .ico {
+            width: 20px;
+            top: -1px;
+            position: relative;
+        }
+
+        .dropdown-column a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            padding: 10px 0;
+            transition: color 0.3s ease;
+        }
+
+        .dropdown-column a:hover {
+            color: #FF2800;
+        }
+
+        .image-container {
+            flex-grow: 1;
+            position: relative;
+            display: none;
+
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        li.dropdown::marker {
+            content: none;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding-left: 0;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+            }
+
+            .dropdown-column {
+                width: 100%;
+                margin: 0;
+            }
+
+            .image-container {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="ferrari-white-logo-png-701751694773093vgk42srnym-removebg-preview.png" alt="Ferrari Logo">
+        </div>
+
+
+        <div class="sidebar">
+            <ul>
+                <li data-target="f1">Formula 1 <img src="arrow.png" class="ico" alt="Arrow"
+                        style="vertical-align: middle;"></li>
+                <li data-target="endurance">Endurance <img src="arrow.png" class="ico" alt="Arrow"
+                        style="vertical-align: middle;">
+                </li>
+                <li data-target="esports">Esports <img src="arrow.png" class="ico" alt="Arrow"
+                        style="vertical-align: middle;"></li>
+                <li data-target="driveracademy">Driver Academy <img src="arrow.png" class="ico" alt="Arrow"
+                        style="vertical-align: middle;"></li>
+            </ul>
+        </div>
+
+
+        <div class="dropdown-column" id="dropdown-f1">
+            <ul>
+
+                <h1> <a href="#">Formula 1</a></h1>
+                <a href="index.html">Home</a>
+                <a href="#">SF-25</a>
+                <li class="dropdown">
+                    <a href="#">Team<img src="downarrow.png" alt="Arrow"
+                            style="margin-left: 5px; width: 16px; height: 16px;"></a>
+                    <div class="dropdown-content">
+                        <a href="#">Overview</a>
+                        <a href="#">Charles Leclerc</a>
+                        <a href="#"> Lewis Hamilton</a>
+                        <a href=""> Frédéric Vasseur</a>
+                    </div>
+                </li>
+                <a href="#">News</a>
+                <a href="#">Races</a>
+                <a href="#">Partners</a>
+                <a href="#">Hospitality</a>
+                <li class="dropdown">
+                    <a href="#">Media Galleries<img src="downarrow.png" alt="Arrow"
+                            style="margin-left: 5px; width: 16px; height: 16px;"></a>
+                    <div class="dropdown-content">
+                        <a href="#">Overview</a>
+                        <a href="#">Photos</a>
+                        <a href="#"> Videos</a>
+                        <a href="">Cover Art</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">History<img src="downarrow.png" alt="Arrow"
+                            style="margin-left: 5px; width: 16px; height: 16px;"></a>
+                    <div class="dropdown-content">
+                        <a href="#">Overview</a>
+                        <a href="#">Single seaters</a>
+                        <a href="#"> Ferrari Champions</a>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="dropdown-column" id="dropdown-endurance">
+            <h1> <a href="#">Endurance</a></h1>
+            <li class="dropdown">
+                <a href="#">Hypercar<img src="downarrow.png" alt="Arrow"
+                        style="margin-left: 5px; width: 16px; height: 16px;"></a>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="">Ferrari 499P</a>
+                    <a href="">Team</a>
+                    <a href="">News</a>
+                    <a href="">Races</a>
+                    <a href="">Live Streaming</a>
+                    <a href="">The Red Line</a>
+                    <a href="">Media Gallery</a>
+                    <a href="">Partners</a>
+
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">GT <img src="downarrow.png" alt="Arrow"
+                        style="margin-left: 5px; width: 16px; height: 16px;"></a>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="">News</a>
+                    <a href="">About Us</a>
+                    <a href="">GT Series</a>
+                    <a href="">Official Drivers</a>
+                    <a href="">Cars</a>
+                    <a href="">Media Gallery</a>
+                    <a href="">Partners</a>
+                </div>
+            </li>
+        </div>
+
+
+        <div class="dropdown-column" id="dropdown-esports">
+            <h1> <a href="#">Esports</a></h1>
+            <a href="#">Overview</a>
+            <a href="#">Team</a>
+            <a href="#">News</a>
+            <a href="#">Standings</a>
+            <a href="#">Partners</a>
+        </div>
+
+        <div class="dropdown-column" id="dropdown-driveracademy">
+            <h1> <a href="#">Driver Academy</a></h1>
+            <a href="index.html">Home</a>
+            <a href="#">Overview</a>
+            <a href="#">Mission</a>
+            <li class="dropdown">
+                <a href="#">Drivers<img src="downarrow.png" alt="Arrow"
+                        style="margin-left: 5px; width: 16px; height: 16px;"></a>
+                <div class="dropdown-content">
+                    <a href="">Overview</a>
+                    <a href="">Noah Baglin</a>
+                    <a href="">Dino Beganovic</a>
+                    <a href="">Rafael Camara</a>
+                    <a href="">Aurelia Nobels</a>
+                    <a href="">Tuukka Taponen</a>
+                    <a href="">Maya Weug</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Media Galleries<img src="downarrow.png" alt="Arrow"
+                        style="margin-left: 5px; width: 16px; height: 16px;"></a>
+                <div class="dropdown-content">
+                    <a href="#">Overview</a>
+                    <a href="#">Photos</a>
+                    <a href="#"> Videos</a>
+                </div>
+            </li>
+            <a href="#">News</a>
+        </div>
+
+
+
+        <div class="image-container" id="image-container-f1">
+            <img src="1.avif" alt="Ferrari Racing Pit Stop" id="image-f1">
+        </div>
+
+
+        <div class="image-container" id="image-container-endurance">
+            <img src="2.avif" alt="Ferrari Endurance Racing" id="image-endurance">
+        </div>
+
+        <div class="image-container" id="image-container-esports">
+            <img src="3.avif" alt="Ferrari Esports Racing" id="image-esports">
+        </div>
+
+        <div class="image-container" id="image-container-driveracademy">
+            <img src="4.avif" alt="Ferrari Esports Racing" id="image-driveracademy">
+        </div>
+
+    </div>
+
+    <script>
+        const sidebarItems = document.querySelectorAll('.sidebar li');
+        const contentData = {
+            f1: {
+                imageContainer: document.getElementById('image-container-f1'),
+                imageElement: document.getElementById('image-f1'),
+                dropdown: document.getElementById('dropdown-f1')
+            },
+            endurance: {
+                imageContainer: document.getElementById('image-container-endurance'),
+                imageElement: document.getElementById('image-endurance'),
+                dropdown: document.getElementById('dropdown-endurance')
+            },
+            esports: {
+                imageContainer: document.getElementById('image-container-esports'),
+                imageElement: document.getElementById('image-esports'),
+                dropdown: document.getElementById('dropdown-esports')
+            },
+            driveracademy: {
+                imageContainer: document.getElementById('image-container-driveracademy'),
+                imageElement: document.getElementById('image-driveracademy'),
+                dropdown: document.getElementById('dropdown-driveracademy')
+            }
+        };
+
+
+        function hideAllContent() {
+            Object.values(contentData).forEach(item => {
+                if (item.imageContainer) item.imageContainer.style.display = 'none';
+                if (item.dropdown) item.dropdown.style.display = 'none';
+            });
+        }
+
+
+        sidebarItems.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                hideAllContent();
+                const target = item.getAttribute('data-target');
+                const content = contentData[target];
+                if (content.imageContainer) content.imageContainer.style.display = 'block';
+                if (content.dropdown) content.dropdown.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>

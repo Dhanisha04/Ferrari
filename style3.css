@@ -1,0 +1,606 @@
+/* Sports Cars Page Styles */
+.sports-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .sports-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .sports-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .sports-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 10;
+  }
+  
+  .sports-content h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .sports-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  
+  .current-range {
+    padding: 100px 0;
+    background-color: #fff;
+  }
+  
+  .current-range h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ed1c24;
+  }
+  
+  .range-intro {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+  }
+  
+  .car-models {
+    margin-top: 50px;
+  }
+  
+  .car-card {
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .car-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .car-image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .car-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  
+  .car-card:hover .car-image img {
+    transform: scale(1.05);
+  }
+  
+  .car-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(237, 28, 36, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .car-card:hover .car-overlay {
+    opacity: 1;
+  }
+  
+  .view-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: white;
+    color: #ed1c24;
+    border: 2px solid white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .view-btn:hover {
+    background: transparent;
+    color: white;
+  }
+  
+  .car-info {
+    padding: 20px;
+    background: white;
+  }
+  
+  .car-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .car-specs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .spec-item {
+    text-align: center;
+  }
+  
+  .spec-item i {
+    color: #ed1c24;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .spec-item span {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .configure-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #ed1c24;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .configure-btn:hover {
+    background: #c5161c;
+  }
+  
+  .car-categories {
+    padding: 100px 0;
+    background-color: #f8f8f8;
+  }
+  
+  .car-categories h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ed1c24;
+  }
+  
+  .categories-intro {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+  }
+  
+  .category-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .category-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  
+  .category-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  .category-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+  }
+  
+  .category-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .category-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .explore-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #ed1c24;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .explore-btn:hover {
+    background: #c5161c;
+  }
+  
+  .technology {
+    padding: 0;
+  }
+  
+  .tech-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .tech-content {
+    padding: 69px;
+    background-color: #f8f8f8;
+    color: #333;
+    height: 100%;
+  }
+  
+  .tech-content h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #ed1c24;
+  }
+  
+  .tech-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+  
+  .tech-features {
+    margin-top: 40px;
+  }
+  
+  .feature {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .feature i {
+    font-size: 1.8rem;
+    color: #ed1c24;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+  
+  .feature h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .tech-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ed1c24;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .tech-btn:hover {
+    background: #c5161c;
+  }
+  
+  .configurator {
+    padding: 100px 0;
+    background-color: #fff;
+  }
+  
+  .configurator h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #ed1c24;
+  }
+  
+  .configurator p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .configurator-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ed1c24;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .configurator-btn:hover {
+    background: #c5161c;
+  }
+
+  
+/* News section starts here */
+.news{
+    background-color: #303030;
+}
+.news .container .row{
+    justify-content: center;
+}
+.news h4{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.news p{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#newsbtn{
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+}
+.news .subscribe {
+    background: radial-gradient(ellipse at bottom, #ed786f, #da291c);
+    text-decoration: none;
+    padding: 16.5px 79px;
+    color: #fff;
+    border: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    transition: background 1s ease, box-shadow 1s ease;
+}
+
+.news .subscribe:hover {
+    background: radial-gradient(ellipse at bottom, #da291c, #b71c1c);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* News section ends here */
+
+
+/* Footer starts here  */
+.fotter{
+    background-color: #181818;
+}
+#linkss{
+    border-bottom: 1px solid #303030;
+}
+.fotter .row .col-2 ul li{
+    list-style: none;
+}
+.fotter .row .col-2 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fotter .row .col-2 ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+}
+.fotter .row .col-2 ul li{
+    padding: 8px 0;
+}
+
+.container .row .social{
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+}
+.container .row .social p {
+    margin-bottom: 0;
+    position: relative;
+    color: #fff;
+    top: 1px;
+}
+.container .row .social i{
+    color: #fff;
+    font-size: 20px;
+}
+.copyright p{
+    color: #646464;
+    font-size: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+/* footer ends here */
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .sports-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .sports-content p {
+      font-size: 1.2rem;
+    }
+    
+    .tech-content {
+      padding: 40px;
+    }
+    
+    .feature {
+      flex-direction: column;
+    }
+    
+    .feature i {
+      margin-bottom: 15px;
+    }
+  }
+
+
+
+  /* Navbar Styles */
+header {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  transition: 0.5s ease;
+}
+
+header .search {
+  color: #fff;
+  padding-right: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+header .search a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header .search a:hover {
+  color: #f1f1f1;
+}
+
+header .brand img {
+  width: 55px;
+}
+
+header .navigation {
+  position: relative;
+}
+
+header .navigation .navigation-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .navigation .navigation-items a {
+  position: relative;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items .brand {
+  padding-left: 5px;
+}
+
+header .navigation .navigation-items a:before {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+header .search a {
+  font-weight: 500;
+  position: relative;
+}
+
+header .search a:after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+header .search a:hover:after {
+  width: 100%;
+}
+
+header .navigation .navigation-items a:hover:before {
+  width: 100%;
+}
+
+header .navigation .navigation-items a.active {
+  color: #fff;
+}
+
+header .navigation .navigation-items a.active:before {
+  width: 100%;
+}
+
+/* Adjust hero section to account for navbar */
+.sports-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 0; /* Remove any margin that might push it down */
+}
+
+/* Mobile View */
+@media (max-width: 1040px) {
+  header {
+      padding: 12px 20px;
+  }
+
+  header .navigation {
+      display: none;
+  }
+
+  .menu-btn {
+      background: url(pn.png
